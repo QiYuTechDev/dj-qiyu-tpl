@@ -9,7 +9,7 @@ RUN pip config set global.index https://mirrors.aliyun.com/pypi/simple \
 
 RUN pip install -r requirements.txt
 
-# 设置为开发的状态
+# 设置为 开发 状态
 ENV DJANGO_DEV=1
 
 ENV SUPERVISOR_USERNAME=supervisor

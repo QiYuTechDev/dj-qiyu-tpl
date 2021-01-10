@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 初始化超级管理员
-(cd $(SUPERVISOR_DJANGO_DIRECTORY) && python manage.py migrate) || {
+(cd $SUPERVISOR_DJANGO_DIRECTORY && python manage.py migrate) || {
         echo '数据库迁移失败' ;
         exit 1;
 }

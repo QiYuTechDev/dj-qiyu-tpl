@@ -9,8 +9,8 @@ RUN pip config set global.index https://mirrors.aliyun.com/pypi/simple \
 
 RUN pip install -r requirements.txt
 
-# 设置为 线上 状态
-ENV DJANGO_PROD=1
+# 设置为 测试 状态
+ENV DJANGO_TEST=1
 
 ENV SUPERVISOR_USERNAME=supervisor
 ENV SUPERVISOR_PASSWORD=supervisor
