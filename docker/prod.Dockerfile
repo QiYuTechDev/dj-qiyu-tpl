@@ -22,4 +22,4 @@ ENV SUPERVISOR_DJANGO_SETTINGS=hello.wsgi
 ENV SUPERVISOR_DJANGO_DIRECTORY=/app/hello
 
 COPY . /app/
-ENTRYPOINT /app/entrypoint.sh
+ENTRYPOINT /app/supervisor/entrypoint.sh
