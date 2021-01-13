@@ -6,7 +6,7 @@ __all__ = ["CustomFormField", "CustomBoundField"]
 
 
 class CustomBoundField(BoundField):
-    custom_field_template = "dj_qiyu_tpl/fields/custom.html"
+    field_template = "dj_qiyu_tpl/fields/custom.html"
 
     def __init__(self, form: Form, field: "CustomFormField", name: str):
         super().__init__(form, field, name)
@@ -19,7 +19,7 @@ class CustomBoundField(BoundField):
             "type": self.field.widget.input_type,
             "widget": self.field.widget,
         }
-        html = loader.render_to_string(self.custom_field_template, context=context)
+        html = loader.render_to_string(self.field_template, context=context)
         return mark_safe(html)
 
 

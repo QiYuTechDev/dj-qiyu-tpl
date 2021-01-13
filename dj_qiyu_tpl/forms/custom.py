@@ -10,21 +10,22 @@ class CustomForm(Form):
     自定义的 Form
     """
 
-    as_p_template = "dj_qiyu_tpl/forms/custom_p.html"
-    as_table_template = "dj_qiyu_tpl/forms/custom_table.html"
-    as_ul_template = "dj_qiyu_tpl/forms/custom_ui.html"
+    custom_p_template = "dj_qiyu_tpl/forms/custom_p.html"
+    custom_table_template = "dj_qiyu_tpl/forms/custom_table.html"
+    custom_ul_template = "dj_qiyu_tpl/forms/custom_ui.html"
 
     def as_p(self):
-        ctx = self._get_render_context()
-        return mark_safe(loader.render_to_string(self.as_p_template, ctx))
+        return self._do_render(self.custom_p_template)
 
     def as_table(self):
-        ctx = self._get_render_context()
-        return mark_safe(loader.render_to_string(self.as_table_template, ctx))
+        return self._do_render(self.custom_table_template)
 
     def as_ul(self):
+        return self._do_render(self.custom_ul_template)
+
+    def _do_render(self, tpl: str) -> str:
         ctx = self._get_render_context()
-        return mark_safe(loader.render_to_string(self.as_ul_template, ctx))
+        return mark_safe(loader.render_to_string(tpl, ctx))
 
     def _get_render_context(self) -> dict:
         """
