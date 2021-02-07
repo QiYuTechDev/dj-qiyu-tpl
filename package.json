@@ -1,6 +1,6 @@
 {
   "name": "dj-qiyu-tpl",
-  "version": "0.2.0",
+  "version": "0.3.1",
   "private": true,
   "dependencies": {
     "bulma": "^0.9.1",
