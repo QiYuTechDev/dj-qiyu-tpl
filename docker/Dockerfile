@@ -11,14 +11,10 @@ RUN pip config set global.index https://mirrors.aliyun.com/pypi/simple        \
 # 设置为 线上 状态
 ENV DJANGO_PROD=1
 
-ENV SUPERVISOR_USERNAME=supervisor
-ENV SUPERVISOR_PASSWORD=supervisor
-ENV SUPERVISOR_PROMPT=supervisor
-
-ENV SUPERVISOR_DJANGO_PORT=8080
-ENV SUPERVISOR_DJANGO_THREADS=200
-ENV SUPERVISOR_DJANGO_SETTINGS=hello.wsgi
-ENV SUPERVISOR_DJANGO_DIRECTORY=/app/hello
+ENV DJANGO_PORT=8080
+ENV DJANGO_THREADS=200
+ENV DJANGO_SETTINGS=hello.wsgi
+ENV DJANGO_DIRECTORY=/app/hello
 
 COPY . /app/
 ENTRYPOINT /app/supervisor/entrypoint.sh
