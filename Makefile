@@ -1,5 +1,3 @@
-
-
 copy-static-files:export VENDOR_DIR=dj_qiyu_tpl/static/dj_qiyu_tpl/vendor
 copy-static-files:
 	rm    -rf $(VENDOR_DIR)
@@ -21,4 +19,14 @@ copy-static-files:
 	cp -r node_modules/remixicon/fonts/*   $(VENDOR_DIR)/remixicon
 
 	rm -rf node_modules
+
+	make collect-rst-static-files
+
+collect-rst-static-files:CWD=$(shell pwd)
+collect-rst-static-files:VDIR=$(shell poetry env info | grep Path | awk '{print $$2}')
+collect-rst-static-files:DOCUTILS_DIR=$(VDIR)/lib/python3.9/site-packages/docutils
+collect-rst-static-files:DEST_DIR=$(shell pwd)/dj_qiyu_tpl/static/dj_qiyu_tpl/vendor/rst
+collect-rst-static-files:
+	mkdir -p $(DEST_DIR)
+	cd $(DOCUTILS_DIR)/writers/html5_polyglot/ && cp *.css $(DEST_DIR)
 
