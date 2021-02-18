@@ -1,6 +1,6 @@
 from django import template
 
-from rst.rst import RstHelper
+from ..rst.rst import RstHelper
 
 register = template.Library()
 
