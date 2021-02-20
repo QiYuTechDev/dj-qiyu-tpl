@@ -16,10 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from tpl_test.views import demo_view
+from tpl_test import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     # demo view
-    path("demo", demo_view),
+    path("demo", views.demo_view),
+    path("app_doc", views.app_doc_tag_view),
 ]
