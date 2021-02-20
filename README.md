@@ -7,6 +7,11 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/qiyutechdev/dj-qiyu-tpl)
 ![Lines of code](https://img.shields.io/tokei/lines/github/qiyutechdev/dj-qiyu-tpl)
 
+[![Black Code Format Check](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/black-format.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/black-format.yml)
+[![pytest](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pytest.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pytest.yml)
+[![Pylama Lint](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pylama-lint.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pylama-lint.yml)
+[![Poetry Publish](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/poetry_pypi.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/poetry_pypi.yml)
+
 WARNING:
 
     this may be useless for you
