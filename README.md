@@ -1,4 +1,4 @@
-# Django Template for Internal Use
+# 奇遇科技 Django 通用模版
 
 ![PyPI - Version](https://img.shields.io/pypi/v/dj-qiyu-tpl)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dj-qiyu-tpl)
@@ -14,3 +14,5 @@ WARNING:
 中文:
 
     可能对您没有任何用处
+
+应用使用方不再需要添加 *django-qiyu-utils* 依赖。
