@@ -30,3 +30,7 @@ collect-rst-static-files:
 	mkdir -p $(DEST_DIR)
 	cd $(DOCUTILS_DIR)/writers/html5_polyglot/ && cp *.css $(DEST_DIR)
 
+
+run-test:
+	cd dj_tests && (rm dj_qiyu_tpl || tru) && ln -s ../dj_qiyu_tpl dj_qiyu_tpl
+	cd dj_tests && poetry run pytest

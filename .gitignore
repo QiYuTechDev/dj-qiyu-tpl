@@ -2,6 +2,8 @@
 poetry.lock
 node_modules
 
+dj_tests/dj_qiyu_tpl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
