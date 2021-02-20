@@ -22,3 +22,7 @@ this is a demo
     }}
 """
     return render(request, "app_doc.html", {"code": rst_code})
+
+
+def pc_mobile_render(request: HttpRequest) -> HttpResponse:
+    return render(request, "pc_mobile.html")
