@@ -11,7 +11,8 @@ def on_mobile_device(ctx: template.Context) -> bool:
     """
     request = ctx["request"]
     assert isinstance(request, HttpRequest)
-    return "Mobile" in request.META.get("HTTP_USER_AGENT", "")
+    user_agent = request.META.get("HTTP_USER_AGENT", "")
+    return "mobile" in user_agent.lower()
 
 
 # noinspection PyUnusedLocal
