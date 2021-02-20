@@ -12,4 +12,7 @@ class AppDocTagTestCase(TestCase):
         assert isinstance(resp, HttpResponse)
         assert resp.status_code == 200
         content = resp.content.decode()
-        print(content)
+        assert "app_doc" in content
+        assert "document" in content
+        assert "hello world" in content
+        assert "this is a demo" in content

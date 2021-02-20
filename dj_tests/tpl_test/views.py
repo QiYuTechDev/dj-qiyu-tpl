@@ -9,4 +9,16 @@ def demo_view(request: HttpRequest) -> HttpResponse:
 
 
 def app_doc_tag_view(request: HttpRequest) -> HttpResponse:
-    return render(request, "app_doc.html", {"code": "hello"})
+    rst_code = f"""\
+hello world
+====================
+
+this is a demo
+
+.. code-block:: c
+
+    int main(int argc, char * argv) {{
+        return 0;
+    }}
+"""
+    return render(request, "app_doc.html", {"code": rst_code})
