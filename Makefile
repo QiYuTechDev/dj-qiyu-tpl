@@ -32,5 +32,5 @@ collect-rst-static-files:
 
 
 run-test:
-	cd dj_tests && (rm dj_qiyu_tpl || tru) && ln -s ../dj_qiyu_tpl dj_qiyu_tpl
+	cd dj_tests && (rm -f dj_qiyu_tpl || true) && ln -s ../dj_qiyu_tpl dj_qiyu_tpl
 	cd dj_tests && poetry run pytest
