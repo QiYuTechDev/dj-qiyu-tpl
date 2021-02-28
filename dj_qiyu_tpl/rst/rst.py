@@ -26,7 +26,7 @@ RST_CONFIG_DEFAULTS = {
 
 class RstHelper(object):
     @staticmethod
-    def publish_app_doc(code: str) -> str:
+    def publish_app_doc(code: str, need_script: bool = True) -> str:
         parts = publish_parts(
             code,
             settings=None,
@@ -34,7 +34,9 @@ class RstHelper(object):
             writer_name="html5",
         )
         body = parts["html_body"]
+        div = f"<div is='app-doc'>{body}</div>"
+        if not need_script:
+            return mark_safe(div)
         return mark_safe(
-            f"""<div is='app-doc'>{body}</div>
-<script src="/static/dj_qiyu_tpl/js/app_doc_node.js"></script>"""
+            f"{div}<script src='/static/dj_qiyu_tpl/js/app_doc_node.js'></script>"
         )

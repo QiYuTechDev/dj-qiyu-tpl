@@ -23,5 +23,6 @@ urlpatterns = [
     # demo view
     path("demo", views.demo_view),
     path("app_doc", views.app_doc_tag_view),
+    path("rst_doc", views.rst_doc_tag_view),
     path("pc_mobile", views.pc_mobile_render)
 ]
