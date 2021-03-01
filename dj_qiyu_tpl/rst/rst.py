@@ -39,5 +39,5 @@ class RstHelper(object):
         if not need_script:
             return mark_safe(div)
         return mark_safe(
-            f"{div}<script src='/static/dj_qiyu_tpl/js/app_doc_node.js'></script>"
+            f"{div}<script src='/static/dj_qiyu_tpl/js/app_doc_node.js' defer async></script>"
         )
