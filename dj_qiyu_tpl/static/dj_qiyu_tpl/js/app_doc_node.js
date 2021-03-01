@@ -40,5 +40,7 @@
         }
     }
 
-    customElements.define("app-doc", AppDocNode, {extends: "div"});
+    if (typeof customElements.get("app-doc") === "undefined") {
+        customElements.define("app-doc", AppDocNode, {extends: "div"});
+    }
 })();
