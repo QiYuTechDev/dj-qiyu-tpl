@@ -1,5 +1,9 @@
 // prevent load multi times
-if (typeof AppDocNode === "undefined") {
+(function () {
+    if (typeof AppDocNode !== "undefined") {
+        return;
+    }
+
     class AppDocNode extends HTMLDivElement {
         constructor() {
             super();
@@ -36,4 +40,4 @@ if (typeof AppDocNode === "undefined") {
     }
 
     customElements.define("app-doc", AppDocNode, {extends: "div"});
-}
+})();

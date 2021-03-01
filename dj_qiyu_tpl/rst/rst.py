@@ -9,6 +9,7 @@ RST_CONFIG_DEFAULTS = {
     "file_insertion_enabled": 0,
     "raw_enabled": 0,
     "_disable_config": 1,
+    "language_code": "zh_cn",
     # use link style sheet
     # decrease output html size
     # [increase performance]
