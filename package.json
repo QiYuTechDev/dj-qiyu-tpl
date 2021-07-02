@@ -1,9 +1,9 @@
 {
   "name": "dj-qiyu-tpl",
-  "version": "0.3.1",
+  "version": "0.4.1",
   "private": true,
   "dependencies": {
-    "bulma": "^0.9.1",
+    "bulma": "^0.9.3",
     "darkreader": "^4.9.26",
     "font-awesome": "^4.7.0",
     "remixicon": "^2.5.0"
