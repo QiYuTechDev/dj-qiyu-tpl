@@ -12,13 +12,11 @@
 [![Pylama Lint](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pylama-lint.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/pylama-lint.yml)
 [![Poetry Publish](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/poetry_pypi.yml/badge.svg)](https://github.com/QiYuTechDev/dj-qiyu-tpl/actions/workflows/poetry_pypi.yml)
 
-WARNING:
+警告(WARNING):
 
-    this may be useless for you
+    可能对您没有什么用处
 
-中文:
-
-    可能对您没有任何用处
+    This may be useless for you
 
 应用使用方不再需要添加 *django-qiyu-utils* 依赖。
 
