@@ -21,3 +21,7 @@ WARNING:
     可能对您没有任何用处
 
 应用使用方不再需要添加 *django-qiyu-utils* 依赖。
+
+## 发布新版本
+
+使用 GitHub Release
