@@ -1,5 +1,6 @@
 .idea
 poetry.lock
+yarn.lock
 node_modules
 
 dj_tests/dj_qiyu_tpl

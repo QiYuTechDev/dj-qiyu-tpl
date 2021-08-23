@@ -14,6 +14,12 @@ copy-static-files:
 	cp -r node_modules/font-awesome/css   $(VENDOR_DIR)/fa
 	cp -r node_modules/font-awesome/fonts $(VENDOR_DIR)/fa
 
+	mkdir -p $(VENDOR_DIR)/fa5
+	cp -r node_modules/@fortawesome/fontawesome-free/css      $(VENDOR_DIR)/fa5
+	cp -r node_modules/@fortawesome/fontawesome-free/js       $(VENDOR_DIR)/fa5
+	cp -r node_modules/@fortawesome/fontawesome-free/svgs     $(VENDOR_DIR)/fa5
+	cp -r node_modules/@fortawesome/fontawesome-free/webfonts $(VENDOR_DIR)/fa5
+
 
 	mkdir -p $(VENDOR_DIR)/remixicon
 	cp -r node_modules/remixicon/fonts/*   $(VENDOR_DIR)/remixicon
