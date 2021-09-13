@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "dj-qiyu-tpl"
-version = "0.4.2"
+version = "0.4.3"
 description = "Template for internal use"
 homepage = "https://www.qiyutech.tech/"
 authors = ["dev <dev@qiyutech.tech>"]

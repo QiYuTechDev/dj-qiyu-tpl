@@ -1,5 +1,5 @@
 asgiref==3.4.1; python_version >= "3.9" and python_version < "4.0"
-django-qiyu-utils==0.3.10; python_version >= "3.9" and python_version < "4.0"
+django-qiyu-utils==0.3.11; python_version >= "3.9" and python_version < "4.0"
 django==3.2.7; python_version >= "3.6"
 docutils==0.17.1; (python_version >= "2.7" and python_full_version < "3.0.0") or (python_full_version >= "3.5.0")
 pygments==2.10.0; python_version >= "3.5"
