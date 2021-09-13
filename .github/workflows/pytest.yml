@@ -22,6 +22,6 @@ jobs:
         run: |
           python -m pip install poetry && poetry update
 
-      - name: Run Lint
+      - name: run pytest
         run: |
           make run-test
