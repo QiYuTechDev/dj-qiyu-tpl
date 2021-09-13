@@ -15,17 +15,32 @@ class TypedContext(TypedDict):
     page_range: Iterable[Union[int, str]]
 
 
+def get_current_page(d: dict) -> int:
+    try:
+        page_no = int(d.get("page", 1))  # noqa
+    except ValueError:
+        page_no = 1
+    return page_no
+
+
+def get_query_except_page(d: dict) -> str:
+    d.pop("page")
+    return urlencode(d)
+
+
 @register.inclusion_tag("dj_qiyu_tpl/pagination_v2.html", takes_context=True)
 def pagination_render(
     context: template.RequestContext, paginator: Paginator
 ) -> TypedContext:
     request: HttpRequest = context.request
-    try:
-        page_no = request.GET.get("page", 1)  # noqa
-    except ValueError:
-        page_no = 1
-    query = urlencode(request.GET.dict())  # noqa
+
+    get = request.GET.dict()  # noqa
+
+    page_no = get_current_page(get)
+    query = get_query_except_page(get)
+
     page = paginator.page(page_no)
+
     return {
         "paginator": paginator,
         "page": page,
