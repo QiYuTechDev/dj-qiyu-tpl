@@ -21,7 +21,7 @@ with page as Paginator
 
             <ul class="pagination-list">
                 {% for pn in page_range %}
-                    {% if pn == "..." %}
+                    {% if pn == "…" %}
                         <li><span class="pagination-ellipsis">&hellip;</span></li>
                     {% else %}
                         {% if pn == page.number %}
