@@ -24,7 +24,10 @@ def get_current_page(d: dict) -> int:
 
 
 def get_query_except_page(d: dict) -> str:
-    d.pop("page")
+    try:
+        d.pop("page")
+    except KeyError:
+        pass
     return urlencode(d)
 
 
