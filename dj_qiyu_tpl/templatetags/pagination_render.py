@@ -48,5 +48,5 @@ def pagination_render(
         "paginator": paginator,
         "page": page,
         "query": query,
-        "page_range": paginator.get_elided_page_range(),
+        "page_range": paginator.get_elided_page_range(page_no),
     }
