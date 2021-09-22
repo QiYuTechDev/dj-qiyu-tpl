@@ -1,9 +1,9 @@
 from django.contrib.auth.models import User
 from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, TemplateView
 
-__all__ = ['demo_view', "app_doc_tag_view", "rst_doc_tag_view", "PaginationView"]
+__all__ = ['demo_view', "app_doc_tag_view", "rst_doc_tag_view", "PaginationView", "DjPageUrl"]
 
 
 def demo_view(request: HttpRequest) -> HttpResponse:
@@ -45,3 +45,7 @@ class PaginationView(ListView):
 
     def get_queryset(self):
         return User.objects.all()
+
+
+class DjPageUrl(TemplateView):
+    template_name = 'dj_page_url.html'
