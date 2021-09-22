@@ -13,7 +13,6 @@ class RstDocTagTestCase(TestCase):
         assert resp.status_code == 200
         content = resp.content.decode()
         assert "app_doc" in content
-        assert "document" in content
         assert "hello world" in content
         assert "this is a demo" in content
         assert content.count("script") == 2
