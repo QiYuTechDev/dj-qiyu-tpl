@@ -3,7 +3,13 @@ from django.http import HttpRequest, HttpResponse, JsonResponse
 from django.shortcuts import render
 from django.views.generic import ListView, TemplateView
 
-__all__ = ['demo_view', "app_doc_tag_view", "rst_doc_tag_view", "PaginationView", "DjPageUrl"]
+__all__ = [
+    "demo_view",
+    "app_doc_tag_view",
+    "rst_doc_tag_view",
+    "PaginationView",
+    "DjPageUrl",
+]
 
 
 def demo_view(request: HttpRequest) -> HttpResponse:
@@ -37,7 +43,7 @@ def pc_mobile_render(request: HttpRequest) -> HttpResponse:
 
 
 class PaginationView(ListView):
-    template_name = 'pagination.html'
+    template_name = "pagination.html"
     paginate_by = 1
 
     def get(self, request, *args, **kwargs):
@@ -48,4 +54,4 @@ class PaginationView(ListView):
 
 
 class DjPageUrl(TemplateView):
-    template_name = 'dj_page_url.html'
+    template_name = "dj_page_url.html"
