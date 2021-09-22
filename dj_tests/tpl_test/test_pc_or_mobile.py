@@ -3,7 +3,6 @@ from django.test import Client, TestCase
 
 
 class PcOrMobileTestCase(TestCase):
-
     def test_pc(self):
         http = Client()
         resp = http.get("/pc_mobile")

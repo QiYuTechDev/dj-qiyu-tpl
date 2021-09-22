@@ -26,4 +26,5 @@ urlpatterns = [
     path("rst_doc", views.rst_doc_tag_view),
     path("pc_mobile", views.pc_mobile_render),
     path("pagination", views.PaginationView.as_view()),
+    path("dj_page_url", views.DjPageUrl.as_view()),
 ]

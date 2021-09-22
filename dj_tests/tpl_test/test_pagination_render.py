@@ -9,8 +9,8 @@ class AppPaginationRender(TestCase):
         self._http = Client()
 
     def test_pagination_render(self):
-        User.objects.create_user('hello')
-        User.objects.create_user('world')
+        User.objects.create_user("hello")
+        User.objects.create_user("world")
 
         resp = self._http.get("/pagination")
         assert isinstance(resp, HttpResponse)

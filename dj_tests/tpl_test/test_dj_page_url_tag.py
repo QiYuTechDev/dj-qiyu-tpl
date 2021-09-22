@@ -3,16 +3,14 @@ from django.test import Client
 from django.test import TestCase
 
 
-class RstDocTagTestCase(TestCase):
+class DjPageUrlTagTestCase(TestCase):
     def setUp(self) -> None:
         self._http = Client()
 
-    def test_app_doc_tag(self):
-        resp = self._http.get("/rst_doc")
+    def test_dj_page_url(self):
+        resp = self._http.get("/dj_page_url?hello=world&page=1")
         assert isinstance(resp, HttpResponse)
         assert resp.status_code == 200
         content = resp.content.decode()
-        assert "app_doc" in content
-        assert "hello world" in content
-        assert "this is a demo" in content
-        assert content.count("script") == 2
+        assert "hello=world" in content
+        assert "page=2" in content
