@@ -3,10 +3,10 @@
   "version": "0.4.1",
   "private": true,
   "dependencies": {
-    "bulma": "^0.9.3",
-    "darkreader": "^4.9.26",
-    "font-awesome": "^4.7.0",
     "@fortawesome/fontawesome-free": "^5.15.4",
+    "bulma": "^0.9.3",
+    "darkreader": "^4.9.39",
+    "font-awesome": "^4.7.0",
     "remixicon": "^2.5.0"
   }
 }

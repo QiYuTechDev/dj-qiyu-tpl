@@ -3,6 +3,8 @@ poetry.lock
 yarn.lock
 node_modules
 
+package-lock.json
+
 dj_tests/dj_qiyu_tpl
 
 # Byte-compiled / optimized / DLL files
