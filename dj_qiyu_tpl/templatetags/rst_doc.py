@@ -1,3 +1,5 @@
+from typing import Optional
+
 from django import template
 from django.http import HttpRequest
 
@@ -9,7 +11,7 @@ __all__ = ["rst_doc"]
 
 
 @register.simple_tag(takes_context=True)
-def rst_doc(context: dict, code: str) -> str:
+def rst_doc(context: dict, code: Optional[str]) -> str:
     """
     rST 文档渲染
 
@@ -19,6 +21,9 @@ def rst_doc(context: dict, code: str) -> str:
 
         {% rst_doc code %}
     """
+    if code is None or not isinstance(code, str):
+        return ""
+
     request: HttpRequest = context["request"]
 
     # 一个页面里面，只有第一次的时候 需要加载 scripts 文件
