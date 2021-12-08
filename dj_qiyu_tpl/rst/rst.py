@@ -40,8 +40,14 @@ class RstHelper(object):
         if not need_script:
             return mark_safe(div)
 
+        # 应该使用 django 配置中的 STATIC_URL
+        # 否则 static 文件在使用 CDN 的时候会有问题
         static_url = getattr(settings, "STATIC_URL", "/static/")
 
         return mark_safe(
-            f"{div}<script src='{static_url}dj_qiyu_tpl/js/app_doc_node.js'></script>"
+            f"""\
+{div}
+<script>globalThis._django_static_url = "{static_url}";</script>
+<script src='{static_url}dj_qiyu_tpl/js/app_doc_node.js'></script>\
+"""
         )
