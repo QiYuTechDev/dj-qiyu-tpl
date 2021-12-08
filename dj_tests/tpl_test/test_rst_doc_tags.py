@@ -15,4 +15,4 @@ class RstDocTagTestCase(TestCase):
         assert "app_doc" in content
         assert "hello world" in content
         assert "this is a demo" in content
-        assert content.count("script") == 3
+        assert content.count("script") == 4
