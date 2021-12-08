@@ -1,5 +1,6 @@
 import os
 
+from django.conf import settings
 from django.utils.safestring import mark_safe
 from docutils.core import publish_parts
 
@@ -38,6 +39,9 @@ class RstHelper(object):
         div = f"<div is='app-doc'>{body}</div>"
         if not need_script:
             return mark_safe(div)
+
+        static_url = getattr(settings, "STATIC_URL", "/static/")
+
         return mark_safe(
-            f"{div}<script src='/static/dj_qiyu_tpl/js/app_doc_node.js'></script>"
+            f"{div}<script src='{static_url}dj_qiyu_tpl/js/app_doc_node.js'></script>"
         )
