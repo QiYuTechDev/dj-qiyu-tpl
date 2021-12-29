@@ -34,12 +34,12 @@ if (!globalThis.registerHtmlCustomElements) {
      * @param {ShadowRootMode} mode
      */
     globalThis.registerHtmlCustomElements = function (name, css_files, mode = 'open') {
-        const cls = customElements.get(name)
+        const cls = customElements.get(name);
         if (cls) {
-            return
+            return;
         }
 
-        const newCls = genHtmlCustomElement(css_files, mode)
-        customElements.define(name, newCls, {extends: 'div'})
+        // already defined
+        customElements.define(name, genHtmlCustomElement(css_files, mode), {extends: 'div'})
     }
 }
