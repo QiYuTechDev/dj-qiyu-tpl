@@ -24,6 +24,3 @@
 
 使用 GitHub Release
 
-## todo
-
-添加模版的 pyi 文件
