@@ -1,3 +1,6 @@
+// 这个 js 文件加载时 必须使用 defer 属性 [防止 自定义元素不生效]
+// 这个 js 文件允许多次加载
+
 if (!globalThis.genHtmlCustomElement) {
     /**
      * 生成一个新的 Div Custom Node
