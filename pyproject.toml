@@ -1,10 +1,21 @@
+# poetry metadata doc: https://python-poetry.org/docs/pyproject
 [tool.poetry]
 name = "dj-qiyu-tpl"
-version = "0.6.1"
-description = "Template for internal use"
-homepage = "https://www.qiyutech.tech/"
+version = "0.6.2"
+description = "Shared Django Template for QiYUTech"
+license = "LGPL-3.0-or-later"
 authors = ["dev <dev@qiyutech.tech>"]
+maintainers = ["dev <dev@qiyutech.tech>"]
 readme = "README.md"
+homepage = "https://www.qiyutech.tech/"
+repository = "https://github.com/QiYuTechDev/dj-qiyu-tpl"
+# doc https://pypi.org/classifiers/
+classifiers = [
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0"
+]
+include = ["Changelog.rst"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
