@@ -1,7 +1,7 @@
 # poetry metadata doc: https://python-poetry.org/docs/pyproject
 [tool.poetry]
 name = "dj-qiyu-tpl"
-version = "0.6.2"
+version = "0.6.3"
 description = "Shared Django Template for QiYUTech"
 license = "LGPL-3.0-or-later"
 authors = ["dev <dev@qiyutech.tech>"]

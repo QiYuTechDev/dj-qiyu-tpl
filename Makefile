@@ -40,3 +40,12 @@ collect-rst-static-files:
 run-test:
 	cd dj_tests && (rm -f dj_qiyu_tpl || true) && ln -s ../dj_qiyu_tpl dj_qiyu_tpl
 	cd dj_tests && poetry run pytest -s
+
+
+i18n-extract:
+	cd dj_qiyu_tpl && poetry run django-admin makemessages --locale en
+	cd dj_qiyu_tpl && poetry run django-admin makemessages --locale zh_hans
+	cd dj_qiyu_tpl && poetry run django-admin makemessages --locale zh_hant
+
+i18n-compile:
+	cd dj_qiyu_tpl && poetry run django-admin compilemessages
