@@ -1,21 +1,12 @@
-{% comment %}
-generic pagination template
-
-WARNING:
-    need bulma css framework
-
-with page_obj as CustomPage
-{% endcomment %}
-
 {% if page_obj.has_other_pages %}
     <div class="container">
         <nav class="pagination is-centered" role="navigation" aria-label="pagination">
             {% if page_obj.has_previous %}
-                <a class="pagination-previous" href="?page=1">第一页</a>
+                <a class="pagination-previous" href="?page=1">{% trans 'first page' %}</a>
             {% endif %}
 
             {% if page_obj.has_next %}
-                <a class="pagination-next" href="?page={{ page_obj.next_page_number }}">下一页</a>
+                <a class="pagination-next" href="?page={{ page_obj.next_page_number }}">{% trans 'next page' %}</a>
             {% endif %}
 
             <ul class="pagination-list">

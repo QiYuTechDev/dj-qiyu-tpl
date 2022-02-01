@@ -1,18 +1,12 @@
-{% comment %}
-通用分页模版
-
-警告: 需要 bulma css 样式
-{% endcomment %}
-
 {% if page.has_other_pages %}
     <div class="container">
         <nav class="pagination is-centered" role="navigation" aria-label="pagination">
             {% if page.has_previous %}
-                <a class="pagination-previous" href="?page=1&{{ query }}">第一页</a>
+                <a class="pagination-previous" href="?page=1&{{ query }}">{% trans 'first page' %}</a>
             {% endif %}
 
             {% if page.has_next %}
-                <a class="pagination-next" href="?page={{ page.next_page_number }}">下一页</a>
+                <a class="pagination-next" href="?page={{ page.next_page_number }}">{% trans 'next page' %}</a>
             {% endif %}
 
             <ul class="pagination-list">
