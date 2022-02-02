@@ -28,11 +28,11 @@ msgstr "Copyright"
 
 #: templates/dj_qiyu_tpl/footer.html:8
 msgid "QiYuTech"
-msgstr "QiYuTech"
+msgstr "QiYuTech Inc."
 
 #: templates/dj_qiyu_tpl/footer.html:10
 msgid "contact method"
-msgstr "Contact method"
+msgstr "Contact us"
 
 #: templates/dj_qiyu_tpl/footer.html:22
 #, python-format
