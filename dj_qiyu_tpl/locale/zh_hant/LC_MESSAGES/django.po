@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 20:31+0800\n"
+"POT-Creation-Date: 2022-02-02 11:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,39 +22,39 @@ msgstr ""
 msgid "QiYuTech Template"
 msgstr "奇遇科技模版"
 
-#: templates/dj_qiyu_tpl/footer.html:7
+#: templates/dj_qiyu_tpl/footer.html:8
 msgid "copyright"
 msgstr "版權所有"
 
-#: templates/dj_qiyu_tpl/footer.html:8
+#: templates/dj_qiyu_tpl/footer.html:9
 #, fuzzy
 #| msgid "QiYuTech Template"
 msgid "QiYuTech"
 msgstr "奇遇科技模版"
 
-#: templates/dj_qiyu_tpl/footer.html:10
+#: templates/dj_qiyu_tpl/footer.html:11
 msgid "contact method"
 msgstr "聯系方式"
 
-#: templates/dj_qiyu_tpl/footer.html:22
+#: templates/dj_qiyu_tpl/footer.html:23
 #, python-format
 msgid "津公网安备 %(ga)s 号"
 msgstr "津公網安備 %(ga)s 號"
 
-#: templates/dj_qiyu_tpl/pagination.html:5
-#: templates/dj_qiyu_tpl/pagination_v2.html:5
+#: templates/dj_qiyu_tpl/pagination.html:7
+#: templates/dj_qiyu_tpl/pagination_v2.html:7
 msgid "first page"
 msgstr "第一頁"
 
-#: templates/dj_qiyu_tpl/pagination.html:9
-#: templates/dj_qiyu_tpl/pagination_v2.html:9
+#: templates/dj_qiyu_tpl/pagination.html:11
+#: templates/dj_qiyu_tpl/pagination_v2.html:11
 msgid "next page"
 msgstr "下一頁"
 
-#: templates/dj_qiyu_tpl/yes_or_no.html:4
+#: templates/dj_qiyu_tpl/yes_or_no.html:5
 msgid "yes"
 msgstr "是"
 
-#: templates/dj_qiyu_tpl/yes_or_no.html:6
+#: templates/dj_qiyu_tpl/yes_or_no.html:7
 msgid "no"
 msgstr "否"
