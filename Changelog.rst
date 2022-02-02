@@ -1,4 +1,9 @@
-v0.6.2
+v0.6.4
+=========================
+
+* add change language view & polish translation
+
+v0.6.3
 =========================
 
 * initial i18n support
