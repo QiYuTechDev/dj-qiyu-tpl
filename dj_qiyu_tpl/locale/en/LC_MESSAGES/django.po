@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-02 11:16+0800\n"
+"POT-Creation-Date: 2022-02-06 18:33+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,20 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: apps.py:12
-msgid "QiYuTech Template"
+msgctxt "model"
+msgid "奇遇科技模版"
 msgstr "QiYuTech Template"
 
 #: templates/dj_qiyu_tpl/footer.html:8
-msgid "copyright"
+msgid "版权所有"
 msgstr "Copyright"
 
 #: templates/dj_qiyu_tpl/footer.html:9
-msgid "QiYuTech"
-msgstr "QiYuTech Inc."
+msgid "奇遇科技"
+msgstr "QiYuTech"
 
 #: templates/dj_qiyu_tpl/footer.html:11
-msgid "contact method"
-msgstr "Contact us"
+msgid "联系方式"
+msgstr "Contact Us"
 
 #: templates/dj_qiyu_tpl/footer.html:23
 #, python-format
