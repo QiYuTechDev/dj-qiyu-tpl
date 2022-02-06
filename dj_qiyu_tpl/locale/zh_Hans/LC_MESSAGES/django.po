@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-06 18:33+0800\n"
+"POT-Creation-Date: 2022-02-06 22:16+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,10 @@ msgstr "联系方式"
 #, python-format
 msgid "津公网安备 %(ga)s 号"
 msgstr "津公网安备 %(ga)s 号"
+
+#: templates/dj_qiyu_tpl/language.html:19
+msgid "Select Language"
+msgstr "语言/Language"
 
 #: templates/dj_qiyu_tpl/pagination.html:7
 #: templates/dj_qiyu_tpl/pagination_v2.html:7
