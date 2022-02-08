@@ -1,1 +1,1 @@
-from .language import ChangeLanguageView
+from .language import ChangeLanguageView  # noqa

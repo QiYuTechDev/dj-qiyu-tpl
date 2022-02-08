@@ -10,7 +10,6 @@ RST_CONFIG_DEFAULTS = {
     "file_insertion_enabled": 0,
     "raw_enabled": 0,
     "_disable_config": 1,
-    "language_code": "zh_cn",
     # use link style sheet
     # decrease output html size
     # [increase performance]
@@ -28,11 +27,13 @@ RST_CONFIG_DEFAULTS = {
 
 class RstHelper(object):
     @staticmethod
-    def publish_app_doc(code: str, need_script: bool = True) -> str:
+    def publish_app_doc(
+        code: str, need_script: bool = True, language: str = "zh_cn"
+    ) -> str:
         parts = publish_parts(
             code,
             settings=None,
-            settings_overrides=RST_CONFIG_DEFAULTS,
+            settings_overrides=RST_CONFIG_DEFAULTS | {"language_code": language},
             writer_name="html5",
         )
         body = parts["html_body"]
