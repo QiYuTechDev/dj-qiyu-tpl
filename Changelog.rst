@@ -1,3 +1,11 @@
+v0.7.0
+=========================
+
+* support Python 3.11
+* support Django 4.2
+* drop support Python 3.9
+
+
 v0.6.10
 =========================
 
